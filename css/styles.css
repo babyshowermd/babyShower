@@ -49,6 +49,15 @@ i {
   color: #0A58CA;
 }
 
+.to-click {
+  position: relative;
+  right: 10px;
+  top: -15px;
+  transform: rotate(-135deg);
+  display: inline-block;
+  margin-right: -1rem;
+}
+
 .header {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
@@ -64,7 +73,7 @@ i {
 }
 
 .intro {
-  margin: 4rem 8rem;
+  margin: 4rem 6rem;
   font-family: "Nunito", sans-serif;
   color: #646464;
   font-size: 3rem;
