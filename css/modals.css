@@ -1,0 +1,27 @@
+.modal-header{
+    justify-content: center;
+}
+
+.modal-title{
+    font-family: 'Lily Script One', cursive !important;
+    margin: auto auto;
+    text-align: center;
+    font-family: cursive;
+    font-size: 3.25em;
+    color: black !important;
+    width: 100%;
+  }
+
+.modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body img{
+    max-width: 25rem;
+}
+
+.papasDiv{
+    display: grid;
+    justify-content: center;
+}
