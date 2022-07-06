@@ -1,0 +1,196 @@
+/* You can add global styles to this file, and also import other style files */
+/** Box Model All HTML elements**/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  padding: 1rem;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #fffdec;
+  color: #646464;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+img {
+  margin: auto auto;
+  width: 100%;
+  max-width: 20rem;
+  min-width: 8rem;
+}
+
+i {
+  color: #646464;
+  font-size: 2rem;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.main-title {
+  font-family: "Lily Script One", cursive !important;
+  margin: auto auto;
+  text-align: center;
+  font-family: cursive;
+  font-size: 7rem;
+  color: #FFBF86;
+}
+
+.intro {
+  margin: 4rem 8rem;
+  font-family: "Nunito", sans-serif;
+  color: #646464;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.general-info {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.div-icon {
+  display: grid;
+  border-radius: 50%;
+  background-color: rgb(214, 237, 248);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.data {
+  display: flex;
+  width: 100%;
+}
+
+.info {
+  margin: auto 0;
+  color: gray;
+  font-size: 2.5rem;
+}
+
+.final {
+  margin: 5rem;
+}
+
+.gift {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  color: gray;
+}
+
+.gift-icon {
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.ib-gift {
+  font-size: 8rem;
+  color: #FFBF86;
+  text-align: center;
+  display: block;
+}
+
+.gift-info {
+  /* display: grid;
+  justify-content: center;
+  align-content: center; */
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.75rem;
+}
+
+.icon-baby-div {
+  border-bottom: 0.5rem solid #FFBF86;
+  width: 100%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ib-baby {
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.osito {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.papas {
+  transform: rotate(15deg);
+}
+
+@media only screen and (max-width: 1000px) {
+  img {
+    max-width: 11rem;
+  }
+
+  .main-title {
+    font-size: 6rem;
+  }
+
+  .intro {
+    font-size: 2.5rem;
+  }
+
+  .info {
+    font-size: 2.25rem;
+  }
+
+  .ib-gift {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  img {
+    max-width: 8rem;
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .intro {
+    font-size: 2rem;
+  }
+
+  .info {
+    font-size: 2rem;
+  }
+
+  .ib-gift {
+    font-size: 4rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

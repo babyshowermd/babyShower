@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?ao004l');
+  src:  url('fonts/icons.eot?ao004l#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?ao004l') format('truetype'),
+    url('fonts/icons.woff?ao004l') format('woff'),
+    url('fonts/icons.svg?ao004l#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ib-"], [class*=" ib-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ib-baby:before {
+  content: "\e900";
+}
+.ib-location:before {
+  content: "\e947";
+}
+.ib-clock:before {
+  content: "\e94e";
+}
+.ib-calendar:before {
+  content: "\e953";
+}
+.ib-gift:before {
+  content: "\e99f";
+}
+.ib-star-empty:before {
+  content: "\e9d7";
+}
+.ib-star-full:before {
+  content: "\e9d9";
+}
+.ib-heart:before {
+  content: "\e9da";
+}

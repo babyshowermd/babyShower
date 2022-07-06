@@ -1,0 +1,17 @@
+.modal-header{
+    justify-content: center;
+}
+
+.modal-title{
+    font-size: 3rem;
+    color: black;
+}
+
+.modal-body{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body img{
+    max-width: 25rem;
+}
