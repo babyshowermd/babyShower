@@ -68,7 +68,7 @@ i {
 }
 
 .main-title {
-  font-family: "Lily Script One", cursive !important;
+  font-family: "Mochiy Pop One", sans-serif !important;
   margin: auto auto;
   text-align: center;
   font-family: cursive;
@@ -160,6 +160,10 @@ i {
   margin: 2rem 0;
 }
 
+.ib-star-full {
+  flex-basis: -moz-available;
+}
+
 @media only screen and (max-width: 1000px) {
   img {
     max-width: 11rem;
@@ -204,5 +208,9 @@ i {
 
   .ib-gift {
     font-size: 4rem;
+  }
+
+  .header-img2 {
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

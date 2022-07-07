@@ -8,16 +8,17 @@
 }
 
 .modal-title{
-    font-family: 'Lily Script One', cursive !important;
+    font-family: 'Monofett', cursive !important;
     margin: auto auto;
     text-align: center;
     font-family: cursive;
-    font-size: 3.25em;
+    font-size: 5rem;
     color: black !important;
     width: 100%;
   }
 
 .modal-body{
+    font-family: 'Nunito', sans-serif;
     display: flex;
     justify-content: center;
     font-weight: 500;
@@ -31,6 +32,7 @@
 .papasDiv{
     display: grid;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
 }
 
 .papas{

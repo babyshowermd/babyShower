@@ -12,31 +12,29 @@
     <link rel="stylesheet" href="icons/icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Nunito:wght@700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Mochiy+Pop+One&family=Monofett&family=Nunito:wght@700;900&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <div class="modal fade interaccion" id="interaccionId">
+    <!-- <div class="modal fade interaccion" id="interaccionId">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title animate__animated animate__jackInTheBox">¡Interactua con la ivitación!</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title animate__animated animate__jackInTheBox">¡Interactua con la ivitación!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div> -->
     <div class="header">
-        <img class="avioncito" src="assets/avioncito.png" alt="">
+        <img class="" src="assets/avioncito.png" alt="">
         <div class="main-title">Baby Shower de los OSITOS BBCITOS</div>
-        <img class="nube" src="assets/nube3.png" alt="">
+        <img class="header-img2" src="assets/osito.png" alt="">
     </div>
     <div class="intro">
-        <div class="animate__animated animate__pulse animate__infinite ">
-            <span class="click" data-bs-toggle="modal" data-bs-target="#losPapas">
-                SERGIO y DIANA
-                <i class="ib-click to-click"></i>
-            </span> 
+        <div id="papasAnimation" class="click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#losPapas">
+            SERGIO y DIANA
+            <i class="ib-click to-click"></i>
         </div>
         van a celebrar su baby shower y nos gustaria que nos acompañes.
     </div>
@@ -57,28 +55,30 @@
             <div class="div-icon">
                 <i class="ib-location"></i>
             </div>
-            <span class="info">
+            <div id="addressAnimation" class="info animate__animated animate__pulse animate__infinite">
                 <a href="https://goo.gl/maps/gg3iBJgo7fD5ohxU8" target="_blank">
-                    en casa de los bbcitos más latocitos
+                    en casa de los bbcitos más latositos
                     <i class="ib-click to-click" style="right: 0px; top: -5px;"></i>
                 </a>
-            </span>
+            </div>
         </div>
     </div>
     <div class="osito">
-        <img src="assets/osito.png" alt="">
+        <img src="assets/nube3.png" alt="">
     </div>
     <div class="gift">
-        <div class="gift-icon click" data-bs-toggle="modal" data-bs-target="#listaRegalos">
+        <div id="giftAnimation" class="gift-icon click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#listaRegalos">
             <i class="ib-gift click" data-bs-toggle="tooltip" title="Lista de regalos"></i>
         </div>
         <div class="gift-info">
             <div class="icon-baby-div click" data-bs-toggle="modal" data-bs-target="#generoModal">
-                <span>¿</span><i class="ib-baby" data-bs-toggle="tooltip" title="¿Niño o niña?"></i><span>?<i class="ib-click to-click" style="top: -30px;"></i></span>
+                <div id="babyAnimation" class="animate__animated animate__pulse animate__infinite">
+                    <i class="ib-baby" data-bs-toggle="tooltip" title="¿Niño o niña?"></i><i class="ib-click to-click" style="top: -30px;"></i>
+                </div>
             </div>
             <span>¡No olvides traer un regalo!</span>
         </div>
-        <div class="gift-icon click" data-bs-toggle="modal" data-bs-target="#listaRegalos">
+        <div id="giftAnimation" class="gift-icon click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#listaRegalos">
             <i class="ib-gift click" data-bs-toggle="tooltip" title="Lista de regalos"></i>
         </div>
     </div>
