@@ -23,7 +23,6 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
-  font-size: 1.6rem;
   line-height: 1.5;
   /* background-color: #fffdec; */
   background-image: linear-gradient(to right, $backgorund-main 70%,$backgorund-second 70%,$backgorund-second 100%);
@@ -89,16 +88,17 @@ i {
 
 .main-info{
   display: grid;
-  grid-template-rows: 2fr 2fr 1fr 4fr 6fr;
+  //grid-template-rows: 2fr 2fr 1fr 4fr 6fr;
 }
 
 .main-title {
-  font-family: 'Mochiy Pop One', sans-serif !important;
-  margin: 2rem auto;
+  font-family: 'Courgette', cursive;;
+  text-shadow: -2px -2px 1px #835314;
+  margin: 1rem auto;
   text-align: center;
-  font-family: cursive;
-  font-size: 5rem;
-  color: #FFBF86;
+  font-size: 8rem;
+  color: #D0AA8E;
+  font-weight: 700;
   //text-align: center;
 }
 
@@ -108,18 +108,22 @@ i {
     color: $main-text;
     font-size: 3rem;
     text-align: center;
+    align-self: center;
 }
 
 .emotion{
   justify-self: center;
   align-self: center;
   color: #C29E83;
+  font-size: 3rem;
+  margin: 1rem auto;
 }
 
 .general-info {
   display: flex;
   flex-direction: column;
   justify-self: center;
+  margin: auto;
 }
 
 .div-icon {
@@ -173,7 +177,7 @@ i {
   align-content: end;
   justify-content: center;
   position: relative;
-  z-index: 1055;
+  z-index: 750;
   width: 175%;
 }
 
@@ -203,9 +207,9 @@ i {
     max-width: 11rem;
   }
   .main-title {
-    font-size: 3.5rem;
+    font-size: 6rem;
   }
-  .intro{
+  .intro, .emotion{
     font-size: 2.5rem;
   }
   .info{
@@ -225,9 +229,9 @@ i {
     grid-template-columns: 1fr
   }
   .main-title {
-    font-size: 2.5rem;
+    font-size: 3.75rem;
   }
-  .intro{
+  .intro, .emotion{
     font-size: 1.75rem;
   }
   .info{

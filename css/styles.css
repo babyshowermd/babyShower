@@ -17,7 +17,6 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 900;
-  font-size: 1.6rem;
   line-height: 1.5;
   /* background-color: #fffdec; */
   background-image: linear-gradient(to right, #FBE4D6 70%, #D0AB90 70%, #D0AB90 100%);
@@ -84,16 +83,16 @@ i {
 
 .main-info {
   display: grid;
-  grid-template-rows: 2fr 2fr 1fr 4fr 6fr;
 }
 
 .main-title {
-  font-family: "Mochiy Pop One", sans-serif !important;
-  margin: 2rem auto;
+  font-family: "Courgette", cursive;
+  text-shadow: -2px -2px 1px #835314;
+  margin: 1rem auto;
   text-align: center;
-  font-family: cursive;
-  font-size: 5rem;
-  color: #FFBF86;
+  font-size: 8rem;
+  color: #D0AA8E;
+  font-weight: 700;
 }
 
 .intro {
@@ -102,18 +101,22 @@ i {
   color: #754B32;
   font-size: 3rem;
   text-align: center;
+  align-self: center;
 }
 
 .emotion {
   justify-self: center;
   align-self: center;
   color: #C29E83;
+  font-size: 3rem;
+  margin: 1rem auto;
 }
 
 .general-info {
   display: flex;
   flex-direction: column;
   justify-self: center;
+  margin: auto;
 }
 
 .div-icon {
@@ -166,7 +169,7 @@ i {
   align-content: end;
   justify-content: center;
   position: relative;
-  z-index: 1055;
+  z-index: 750;
   width: 175%;
 }
 
@@ -194,10 +197,10 @@ i {
   }
 
   .main-title {
-    font-size: 3.5rem;
+    font-size: 6rem;
   }
 
-  .intro {
+  .intro, .emotion {
     font-size: 2.5rem;
   }
 
@@ -219,10 +222,10 @@ i {
   }
 
   .main-title {
-    font-size: 2.5rem;
+    font-size: 3.75rem;
   }
 
-  .intro {
+  .intro, .emotion {
     font-size: 1.75rem;
   }
 
