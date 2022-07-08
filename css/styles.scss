@@ -1,10 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 /** Box Model All HTML elements**/
+$backgorund-main: #FBE4D6;
+$backgorund-second: #D0AB90;
+$main-text: #754B32;
+$main-second: #754b32bd;
+$color-hover: #FFBF86;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   /* 1rem = 10px */
-  padding: 1rem;
+  //padding: 1rem;
   scroll-behavior: smooth;
   height: 100%;
 }
@@ -20,14 +25,18 @@ body {
   font-weight: 900;
   font-size: 1.6rem;
   line-height: 1.5;
-  background-color: #fffdec;
-  color: #646464;
+  /* background-color: #fffdec; */
+  background-image: linear-gradient(to right, $backgorund-main 70%,$backgorund-second 70%,$backgorund-second 100%);
+  color: #98603B;
   height: 100%;
 }
 
 a {
   text-decoration: none;
-  color: gray;
+  color: $main-second;
+}
+a:hover{
+  color: $color-hover;
 }
 
 img {
@@ -39,14 +48,14 @@ img {
 
 i {
   //color: #646464;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .click{
   cursor: pointer;
 }
 .click:hover{
-  color: #0A58CA;
+  color: $color-hover;
 }
 
 .to-click{
@@ -58,46 +67,68 @@ i {
   margin-right: -1rem;
 }
 
-.interaccion{
-  margin-top: 30rem;
+.general{
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  height: 100%;
 }
 
-.header {
+.stars{
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: repeat(1,1fr 1fr 1fr);
+  grid-template-rows: repeat(10,1fr);
+}
+
+.ib-star-full{
+  font-size: 1.75rem;
+  color: #C59879;
+  position: relative;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.main-info{
+  display: grid;
+  grid-template-rows: 2fr 2fr 1fr 4fr 6fr;
 }
 
 .main-title {
   font-family: 'Mochiy Pop One', sans-serif !important;
-  margin: auto auto;
+  margin: 2rem auto;
   text-align: center;
   font-family: cursive;
-  font-size: 7rem;
+  font-size: 5rem;
   color: #FFBF86;
   //text-align: center;
 }
 
 .intro{
-    margin: 2rem 6rem;
+    margin: 0em 1.5rem;
     font-family: 'Nunito', sans-serif;
-    color: #646464;
+    color: $main-text;
     font-size: 3rem;
     text-align: center;
 }
 
+.emotion{
+  justify-self: center;
+  align-self: center;
+  color: #C29E83;
+}
+
 .general-info {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
 
 .div-icon {
   display: grid;
   border-radius: 50%;
-  background-color: rgb(214, 237, 248);
+  background-color: $backgorund-second;
   padding: 1rem;
   margin: 1rem;
+  height: fit-content;
 }
 
 .data {
@@ -108,21 +139,48 @@ i {
 
 .info{
   margin: auto 0;
-  color: gray;
+  color: $main-second;
   font-size: 2.5rem;
   //text-align: center;
 }
 
-.final{
-  margin: 5rem;
+.v-line{
+  position: absolute;
+  border-left: 1px solid #f7dac7;
+  height:100%;
+  z-index: -1055;
 }
 
-.gift{
+.footer{
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  //margin: 5rem 0;
-  color: gray;
-  margin: 3rem 3.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+
+}
+
+.icon-baby-div{
+  margin-left: 2rem;
+  align-self: end;
+}
+
+.ib-baby{
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.osito-div{
+  display: grid;
+  align-content: end;
+  justify-content: center;
+  position: relative;
+  z-index: 1055;
+  width: 175%;
+}
+
+.osito-img{
+  position: relative;
+  //max-width: none;
+  max-width: 28rem;
 }
 
 .gift-icon{
@@ -138,44 +196,14 @@ i {
   text-align: center;
   display: block;
 }
-
-.gift-info{
-  /* display: grid;
-  justify-content: center;
-  align-content: center; */
-  text-align: center;
-  width: 100%;
-  font-size: 1.75rem;
-}
-
-.icon-baby-div{
-  border-bottom: 0.5rem solid #FFBF86;
-  width: 100%;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-}
-
-.ib-baby{
-  justify-content: center;
-  font-size: 5rem;
-}
-
-.osito{
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-}
-
-.ib-star-full{
-  flex-basis: -moz-available;
-}
+ 
 
 @media only screen and (max-width: 1000px) {
   img{
     max-width: 11rem;
   }
   .main-title {
-    font-size: 6rem;
+    font-size: 3.5rem;
   }
   .intro{
     font-size: 2.5rem;
@@ -197,13 +225,13 @@ i {
     grid-template-columns: 1fr
   }
   .main-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .intro{
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .info{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .ib-gift{
     font-size: 4rem;

@@ -16,71 +16,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <!-- <div class="modal fade interaccion" id="interaccionId">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title animate__animated animate__jackInTheBox">¡Interactua con la ivitación!</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div id="lines"></div>
+    <div class="general">
+        <div class="main-info"> 
+            <div class="main-title">Baby Shower</div>
+            <div class="intro">
+                <div id="papasAnimation" class="click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#losPapas">
+                    SERGIO y DIANA
+                    <i class="ib-click to-click"></i>
+                </div>
+                esperan a su bebé con mucha emoción y lo quieren compartir contigo
+            </div>
+            <div class="emotion">¡ACOMPAÑALOS!</div>
+            <div class="general-info">
+                <div class="data">
+                    <div class="div-icon">
+                        <i class="ib-calendar"></i>
+                    </div>
+                    <span class="info">SABADO ## DE SEPTIEMBRE</span>
+                </div>
+                <div class="data">
+                    <div class="div-icon">
+                        <i class="ib-clock"></i>
+                    </div>
+                    <span class="info">DE 12H A 20H</span>
+                </div>
+                <div class="data animate__animated animate__pulse animate__infinite">
+                    <div class="div-icon">
+                        <i class="ib-location"></i>
+                    </div>
+                    <div id="addressAnimation" class="info ">
+                        <a href="https://goo.gl/maps/gg3iBJgo7fD5ohxU8" target="_blank">
+                            en casa de los bbcitos<br> más latositos
+                            <i class="ib-click to-click" style="right: 9px; top: -8px;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div> -->
-    <div class="header">
-        <img class="" src="assets/avioncito.png" alt="">
-        <div class="main-title">Baby Shower de los OSITOS BBCITOS</div>
-        <img class="header-img2" src="assets/osito.png" alt="">
-    </div>
-    <div class="intro">
-        <div id="papasAnimation" class="click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#losPapas">
-            SERGIO y DIANA
-            <i class="ib-click to-click"></i>
-        </div>
-        van a celebrar su baby shower y nos gustaria que nos acompañes.
-    </div>
-    <div class="general-info">
-        <div class="data">
-            <div class="div-icon">
-                <i class="ib-calendar"></i>
-            </div>
-            <span class="info">SABADO ## DE SEPTIEMBRE</span>
-        </div>
-        <div class="data">
-            <div class="div-icon">
-                <i class="ib-clock"></i>
-            </div>
-            <span class="info">DE 12H A 20H</span>
-        </div>
-        <div class="data">
-            <div class="div-icon">
-                <i class="ib-location"></i>
-            </div>
-            <div id="addressAnimation" class="info animate__animated animate__pulse animate__infinite">
-                <a href="https://goo.gl/maps/gg3iBJgo7fD5ohxU8" target="_blank">
-                    en casa de los bbcitos<br> más latositos
-                    <i class="ib-click to-click" style="right: 9px; top: -8px;"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="osito">
-        <img src="assets/nube3.png" alt="">
-    </div>
-    <div class="gift">
-        <div id="giftAnimation" class="gift-icon click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#listaRegalos">
-            <i class="ib-gift click" data-bs-toggle="tooltip" title="Lista de regalos"></i>
-        </div>
-        <div class="gift-info">
-            <div class="icon-baby-div click" data-bs-toggle="modal" data-bs-target="#generoModal">
-                <div id="babyAnimation" class="animate__animated animate__pulse animate__infinite">
+            <div class="footer">
+                <div id="babyAnimation" class="icon-baby-div click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#generoModal">
                     <i class="ib-baby" data-bs-toggle="tooltip" title="¿Niño o niña?"></i><i class="ib-click to-click" style="top: -30px;"></i>
                 </div>
+                <div id="osito-div" class="osito-div">
+                    <img class="osito-img" src="assets/osito2.png" alt="">
+                </div> 
             </div>
-            <span>¡No olvides traer un regalo!</span>
         </div>
-        <div id="giftAnimation" class="gift-icon click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#listaRegalos">
-            <i class="ib-gift click" data-bs-toggle="tooltip" title="Lista de regalos"></i>
-        </div>
+        <div id="stars" class="stars"></div>
     </div>
     <div>
         <div w3-include-html="modals.html"></div> 
