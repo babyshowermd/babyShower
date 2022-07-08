@@ -59,6 +59,7 @@ i {
   transform: rotate(-135deg);
   display: inline-block;
   margin-right: -1rem;
+  font-size: 1.5rem;
 }
 
 .general {
@@ -96,7 +97,7 @@ i {
 }
 
 .intro {
-  margin: 0em 1.5rem;
+  margin: 0 1.5rem;
   font-family: "Nunito", sans-serif;
   color: #754B32;
   font-size: 3rem;
@@ -109,7 +110,6 @@ i {
   align-self: center;
   color: #C29E83;
   font-size: 3rem;
-  margin: 1rem auto;
 }
 
 .general-info {
@@ -151,46 +151,53 @@ i {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 1rem;
+  width: 142%;
+  z-index: 750;
+  align-content: end;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
 }
 
 .icon-baby-div {
-  margin-left: 2rem;
-  align-self: end;
+  align-self: center;
+  justify-self: center;
+  margin: -1rem;
 }
 
 .ib-baby {
   justify-content: center;
-  font-size: 5rem;
-}
-
-.osito-div {
-  display: grid;
-  align-content: end;
-  justify-content: center;
-  position: relative;
-  z-index: 750;
-  width: 175%;
+  font-size: 4.5rem;
 }
 
 .osito-img {
+  display: flex;
   position: relative;
-  max-width: 28rem;
-}
-
-.gift-icon {
-  align-self: center;
-  justify-self: center;
+  max-width: 55rem;
+  z-index: 750;
   width: 100%;
+  align-self: end;
+  margin: 0;
+  justify-self: center;
 }
 
-.ib-gift {
-  font-size: 8rem;
-  color: #FFBF86;
-  text-align: center;
-  display: block;
+.globos-img {
+  display: flex;
+  justify-content: end;
+  align-content: end;
+  max-width: 15rem;
 }
 
+@media screen and (min-width: 850px) {
+  .stars {
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .osito-img {
+    max-width: 40rem;
+  }
+}
 @media only screen and (max-width: 1000px) {
   img {
     max-width: 11rem;
@@ -208,17 +215,13 @@ i {
     font-size: 2.25rem;
   }
 
-  .ib-gift {
-    font-size: 6rem;
+  .osito-img {
+    max-width: 35rem;
   }
 }
 @media only screen and (max-width: 600px) {
   img {
     max-width: 8rem;
-  }
-
-  .header {
-    grid-template-columns: 1fr;
   }
 
   .main-title {
@@ -233,11 +236,7 @@ i {
     font-size: 1.5rem;
   }
 
-  .ib-gift {
-    font-size: 4rem;
-  }
-
-  .header-img2 {
-    margin-top: 1rem;
+  .osito-img {
+    max-width: 30rem;
   }
 }/*# sourceMappingURL=styles.css.map */

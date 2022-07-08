@@ -27,7 +27,7 @@ $(document).ready(function() {
             style = "left:"+left+"; height:"+ height
             $("#lines").append('<div class="v-line" style="'+style+'"></div>');
         }
-        hodiv =  $("#osito-div").height()
+        hodiv =  $(".footer").height() * .95
         $(".osito-img").css("height",  hodiv  + "px");
     }
 });
