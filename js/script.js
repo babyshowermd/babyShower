@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    //$('#interaccionId').modal('show');
+    $('#interaccionId').modal('show');
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
     resizeObserver.observe(document.body);
     $('#modals-div').load("modals.html");
@@ -20,6 +20,7 @@ $(document).ready(function() {
     }
     function updateScreenSize(){
         $("#lines").empty();
+        console.log("test");
         let lines = $(".main-info").width() / 10;
         let height = $(".main-info").height() + "px";
         for (let i = 0; i < lines; i++) {
@@ -28,6 +29,6 @@ $(document).ready(function() {
             $("#lines").append('<div class="v-line" style="'+style+'"></div>');
         }
         hodiv =  $(".footer").height() * .95
-        $(".osito-img").css("height",  hodiv  + "px");
+        //$(".osito-img").css("height",  hodiv  + "px");
     }
 });

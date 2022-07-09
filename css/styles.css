@@ -154,9 +154,7 @@ i {
   width: 142%;
   z-index: 750;
   align-content: end;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
+  position: relative;
 }
 
 .icon-baby-div {
@@ -172,12 +170,11 @@ i {
 
 .osito-img {
   display: flex;
-  position: relative;
-  max-width: 55rem;
+  max-width: 38rem;
   z-index: 750;
   width: 100%;
-  align-self: end;
   margin: 0;
+  bottom: 1rem;
   justify-self: center;
 }
 
@@ -191,11 +188,6 @@ i {
 @media screen and (min-width: 850px) {
   .stars {
     justify-items: center;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  .osito-img {
-    max-width: 40rem;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -214,10 +206,6 @@ i {
   .info {
     font-size: 2.25rem;
   }
-
-  .osito-img {
-    max-width: 35rem;
-  }
 }
 @media only screen and (max-width: 600px) {
   img {
@@ -234,9 +222,5 @@ i {
 
   .info {
     font-size: 1.5rem;
-  }
-
-  .osito-img {
-    max-width: 30rem;
   }
 }/*# sourceMappingURL=styles.css.map */
