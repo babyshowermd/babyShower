@@ -34,6 +34,6 @@ $(document).ready(function() {
 
     $('#addressAnimation').click( ()=> {
         $("#addressFrame").attr("width", $("body").width() * 0.975);
-        $("#addressFrame").attr("height", $("body").height() * 0.50);
+        $("#addressFrame").attr("height", $("body").height() * 0.75);
     })
 });
