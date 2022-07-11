@@ -76,7 +76,7 @@ i {
 .stars {
   display: grid;
   grid-template-columns: repeat(1, 1fr 1fr 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .ib-star-full {

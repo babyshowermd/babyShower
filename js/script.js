@@ -8,11 +8,12 @@ $(document).ready(function() {
         $("#"+this.id).removeClass("animate__infinite");
     });
 
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 36; i++) {
         topW = getRandom(0,5) + "rem"
         left = getRandom(0,1.5) + "rem"
-        style = "top:"+topW+"; left:"+left+";"
-        $("#stars").append('<i class="ib-star-full" style="'+style+'"></i>');
+        style = "top:"+topW+"; left:"+left+"; --animate-duration:" + getRandom(5,6) + "s"
+        delay = Math.round(getRandom(0,4))
+        $("#stars").append('<i class="ib-star-full animate__heartBeat animate__animated animate__delay-'+delay+'s animate__infinite" style="'+style+'"></i>');
     }
 
     function getRandom(min, max) {
