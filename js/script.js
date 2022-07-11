@@ -30,5 +30,7 @@ $(document).ready(function() {
         }
         reSize =  0.018*($(".footer").width()-360) + 23
         $(".osito-img").css("width",  reSize + "rem");
+        $("#addressFrame").attr("width", $(".general").width() * 0.975);
+        $("#addressFrame").attr("height", $(".general").height() * 0.50);
     }
 });
