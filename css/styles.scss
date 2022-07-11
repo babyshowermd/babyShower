@@ -39,7 +39,7 @@ a:hover{
 }
 
 i:hover{
-  color: $main-second;
+  color: $color-hover;
 }
 
 img {
@@ -179,7 +179,6 @@ i {
   align-self: center;
   justify-self: center;
   margin: -1rem;
-  color: #98603B;
 }
 
 .ib-baby{
@@ -192,7 +191,6 @@ i {
   max-width: none;
   z-index: 750;
   margin: 0;
-  bottom: 1rem;
   justify-self: center;
 }
 

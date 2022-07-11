@@ -34,7 +34,7 @@ a:hover {
 }
 
 i:hover {
-  color: rgba(117, 75, 50, 0.7411764706);
+  color: #FFBF86;
 }
 
 img {
@@ -173,7 +173,6 @@ i {
   align-self: center;
   justify-self: center;
   margin: -1rem;
-  color: #98603B;
 }
 
 .ib-baby {
@@ -186,7 +185,6 @@ i {
   max-width: none;
   z-index: 750;
   margin: 0;
-  bottom: 1rem;
   justify-self: center;
 }
 
