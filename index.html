@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,58 +8,67 @@
     <title>Baby Shower</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="icons/icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lily+Script+One&family=Mochiy+Pop+One&family=Monofett&family=Nunito:wght@700;900&family=Titan+One&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Lily+Script+One&family=Mochiy+Pop+One&family=Monofett&family=Nunito:wght@700;900&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
     <div id="lines"></div>
     <div class="general">
-        <div class="main-info"> 
-            <div class="main-title">Baby Shower</div>
-            <div class="intro">
-                <div id="papasAnimation" class="click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#losPapas">
-                    SERGIO y DIANA
-                    <i class="ib-click to-click"></i>
-                </div>
-                esperan a su bebé con mucha emoción y lo quieren compartir contigo
-            </div>
-            <div class="emotion">
-                ¡ACOMPAÑALOS!
-            </div>
-            <div id="babyAnimation" class="icon-baby-div click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#generoModal">
-                <i class="ib-baby" data-bs-toggle="tooltip" title="¿Niño o niña?"></i><i class="ib-click to-click" style="top: -30px;"></i>
-            </div>
-            <div class="general-info">
-                <div class="data">
-                    <div class="div-icon">
-                        <i class="ib-calendar"></i>
+        <div class="main">
+            <div class="main-info">
+                <div class="main-title">Baby Shower</div>
+                <div class="intro">
+                    <div id="papasAnimation" class="click animate__animated animate__pulse animate__infinite"
+                        data-bs-toggle="modal" data-bs-target="#losPapas">
+                        SERGIO y DIANA
+                        <i class="ib-click to-click"></i>
                     </div>
-                    <span class="info">SABADO ## DE SEPTIEMBRE</span>
+                    esperan a su bebé con mucha emoción y lo quieren compartir contigo
                 </div>
-                <div class="data">
-                    <div class="div-icon">
-                        <i class="ib-clock"></i>
-                    </div>
-                    <span class="info">DE 12H A 20H</span>
+                <div class="emotion">
+                    ¡ACOMPAÑALOS!
                 </div>
-                <div id="addressAnimation" class="data animate__animated animate__pulse animate__infinite">
-                    <div class="div-icon">
-                        <i class="ib-location"></i>
+                <div id="babyAnimation" class="icon-baby-div click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#generoModal">
+                    <i class="ib-baby" data-bs-toggle="tooltip" title="¿Niño o niña?"></i><i class="ib-click to-click"
+                        style="top: -30px;"></i>
+                </div>
+                <div class="general-info">
+                    <div class="data">
+                        <div class="div-icon">
+                            <i class="ib-calendar"></i>
+                        </div>
+                        <span class="info">SABADO ## DE SEPTIEMBRE</span>
                     </div>
-                    <div class="info">
-                        <a href="https://goo.gl/maps/gg3iBJgo7fD5ohxU8" target="_blank">
-                            En casa de los bbcitos<br> más latositos
-                            <i class="ib-click to-click" style="right: 9px; top: -8px;"></i>
-                        </a>
+                    <div class="data">
+                        <div class="div-icon">
+                            <i class="ib-clock"></i>
+                        </div>
+                        <span class="info">DE 12H A 20H</span>
+                    </div>
+                    <div id="addressAnimation" class="data animate__animated animate__pulse animate__infinite">
+                        <div class="div-icon">
+                            <i class="ib-location"></i>
+                        </div>
+                        <div class="info">
+                            <a href="https://goo.gl/maps/gg3iBJgo7fD5ohxU8" target="_blank">
+                                En casa de los bbcitos<br> más latositos
+                                <i class="ib-click to-click" style="right: 9px; top: -8px;"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <div class="footer">
                 <div></div>
@@ -70,6 +80,9 @@
     <div id="modals-div"></div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
+
 </html>

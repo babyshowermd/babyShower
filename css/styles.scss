@@ -38,6 +38,10 @@ a:hover{
   color: $color-hover;
 }
 
+i:hover{
+  color: $main-second;
+}
+
 img {
   margin: auto auto;
   width: 100%;
@@ -73,6 +77,11 @@ i {
   height: 100%;
 }
 
+.main{
+  display: grid;
+  grid-template-rows: auto 30rem;
+}
+
 .stars{
   display: grid;
   grid-template-columns: repeat(1,1fr 1fr 1fr);
@@ -89,18 +98,20 @@ i {
 
 .main-info{
   display: grid;
-  //grid-template-rows: 2fr 2fr 1fr 4fr 6fr;
+  min-height: 45rem;
+  gap: 1rem;
+  position: relative;
+  z-index: 750;
 }
 
 .main-title {
-  font-family: 'Courgette', cursive;;
+  font-family: 'Courgette', cursive;
   text-shadow: -2px -2px 1px #835314;
   margin: 1rem auto;
   text-align: center;
   font-size: 8rem;
   color: #D0AA8E;
   font-weight: 700;
-  //text-align: center;
 }
 
 .intro{
@@ -159,7 +170,6 @@ i {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 142%;
-  z-index: 750;
   align-content: end;
   position: relative;
 
@@ -169,6 +179,7 @@ i {
   align-self: center;
   justify-self: center;
   margin: -1rem;
+  color: #98603B;
 }
 
 .ib-baby{
@@ -178,9 +189,8 @@ i {
 
 .osito-img{
   display: flex;
-  max-width: 38rem;
+  max-width: none;
   z-index: 750;
-  width: 100%;
   margin: 0;
   bottom: 1rem;
   justify-self: center;
@@ -198,10 +208,10 @@ i {
   .stars{
     justify-items: center;
   }
+  .main{
+    grid-template-rows: auto 38rem;
+  }
 }
-
-@media only screen and (max-width: 1500px) {
-} 
 
 @media only screen and (max-width: 1000px) {
   img{

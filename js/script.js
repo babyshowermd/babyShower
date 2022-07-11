@@ -20,15 +20,14 @@ $(document).ready(function() {
     }
     function updateScreenSize(){
         $("#lines").empty();
-        console.log("test");
-        let lines = $(".main-info").width() / 10;
-        let height = $(".main-info").height() + "px";
+        let lines = $(".general").width() / 10 * 0.7;
+        let height = $(".main").height() + "px";
         for (let i = 0; i < lines; i++) {
             left = (i*10) + "px"
             style = "left:"+left+"; height:"+ height
             $("#lines").append('<div class="v-line" style="'+style+'"></div>');
         }
-        hodiv =  $(".footer").height() * .95
-        //$(".osito-img").css("height",  hodiv  + "px");
+        reSize =  0.018*($(".footer").width()-360) + 23
+        $(".osito-img").css("width",  reSize + "rem");
     }
 });
