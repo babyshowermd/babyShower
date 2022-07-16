@@ -191,6 +191,14 @@ i {
   max-width: 15rem;
 }
 
+.gift-foot {
+  position: absolute;
+  display: grid;
+  width: 70vw;
+  align-content: end;
+  justify-content: start;
+}
+
 @media screen and (min-width: 850px) {
   .stars {
     justify-items: center;

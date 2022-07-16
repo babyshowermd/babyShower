@@ -21,8 +21,9 @@ $(document).ready(function() {
     }
     function updateScreenSize(){
         $("#lines").empty();
+        let mainH = $(".main").height();
         let lines = $(".general").width() / 10 * 0.7;
-        let height = $(".main").height() + "px";
+        let height = mainH + "px";
         for (let i = 0; i < lines; i++) {
             left = (i*10) + "px"
             style = "left:"+left+"; height:"+ height
@@ -30,6 +31,7 @@ $(document).ready(function() {
         }
         reSize =  0.018*($(".footer").width()-360) + 23
         $(".osito-img").css("width",  reSize + "rem");
+        $(".gift-foot").css("height", mainH - $(".main-info").height() + "px")
     }
 
     $('#addressAnimation').click( ()=> {
