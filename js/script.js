@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+    $('#audioBg').prop("volume", 0.1);
     $('#interaccionId').modal('show');
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
     resizeObserver.observe(document.body);
