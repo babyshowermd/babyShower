@@ -1,10 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 /** Box Model All HTML elements**/
-$backgorund-main: #FBE4D6;
-$backgorund-second: #D0AB90;
-$main-text: #754B32;
-$main-second: #754b32bd;
-$color-hover: #FFBF86;
+$backgorund-main: #fbe4d6;
+$backgorund-second: #d0ab90;
+$main-text: #754b32;
+$main-second: #98735D;
+$color-hover: #ffb286;
+$stars-color: #c59879;
+$general-color: #98603b;
+$header-color: #d0aa8e;
+$lines-color: #F7DAC7;
+$emotion-color: #c29e83;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -26,7 +31,7 @@ body {
   line-height: 1.5;
   /* background-color: #fffdec; */
   background-image: linear-gradient(to right, $backgorund-main 70%,$backgorund-second 70%,$backgorund-second 100%);
-  color: #98603B;
+  color: $general-color;
   height: 100%;
 }
 
@@ -86,7 +91,7 @@ i {
 
 .ib-star-full{
   font-size: 1.75rem;
-  color: #C59879;
+  color: $stars-color;
   position: relative;
   height: 1.25rem;
   width: 1.25rem;
@@ -106,7 +111,7 @@ i {
   margin: 1rem auto;
   text-align: center;
   font-size: 8rem;
-  color: #D0AA8E;
+  color: $header-color;
   font-weight: 700;
 }
 
@@ -122,7 +127,7 @@ i {
 .emotion{
   justify-self: center;
   align-self: center;
-  color: #C29E83;
+  color: $emotion-color;
   font-size: 3rem;
 }
 
@@ -157,7 +162,7 @@ i {
 
 .v-line{
   position: absolute;
-  border-left: 1px solid #f7dac7;
+  border-left: 1px solid $lines-color;
   height:100%;
   z-index: -1055;
 }

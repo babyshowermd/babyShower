@@ -19,18 +19,18 @@ body {
   font-weight: 900;
   line-height: 1.5;
   /* background-color: #fffdec; */
-  background-image: linear-gradient(to right, #FBE4D6 70%, #D0AB90 70%, #D0AB90 100%);
-  color: #98603B;
+  background-image: linear-gradient(to right, #fbe4d6 70%, #d0ab90 70%, #d0ab90 100%);
+  color: #98603b;
   height: 100%;
 }
 
 a {
   text-decoration: none;
-  color: rgba(117, 75, 50, 0.7411764706);
+  color: #98735D;
 }
 
 a:hover {
-  color: #FFBF86;
+  color: #ffb286;
 }
 
 img {
@@ -49,7 +49,7 @@ i {
 }
 
 .click:hover {
-  color: #FFBF86;
+  color: #ffb286;
 }
 
 .to-click {
@@ -81,7 +81,7 @@ i {
 
 .ib-star-full {
   font-size: 1.75rem;
-  color: #C59879;
+  color: #c59879;
   position: relative;
   height: 1.25rem;
   width: 1.25rem;
@@ -101,14 +101,14 @@ i {
   margin: 1rem auto;
   text-align: center;
   font-size: 8rem;
-  color: #D0AA8E;
+  color: #d0aa8e;
   font-weight: 700;
 }
 
 .intro {
   margin: 0 1.5rem;
   font-family: "Nunito", sans-serif;
-  color: #754B32;
+  color: #754b32;
   font-size: 3rem;
   text-align: center;
   align-self: center;
@@ -117,7 +117,7 @@ i {
 .emotion {
   justify-self: center;
   align-self: center;
-  color: #C29E83;
+  color: #c29e83;
   font-size: 3rem;
 }
 
@@ -131,7 +131,7 @@ i {
 .div-icon {
   display: grid;
   border-radius: 50%;
-  background-color: #D0AB90;
+  background-color: #d0ab90;
   padding: 1rem;
   margin: 1rem;
   height: -webkit-fit-content;
@@ -146,13 +146,13 @@ i {
 
 .info {
   margin: auto 0;
-  color: rgba(117, 75, 50, 0.7411764706);
+  color: #98735D;
   font-size: 2.5rem;
 }
 
 .v-line {
   position: absolute;
-  border-left: 1px solid #f7dac7;
+  border-left: 1px solid #F7DAC7;
   height: 100%;
   z-index: -1055;
 }
