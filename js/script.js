@@ -25,7 +25,7 @@ $(document).ready(function() {
             "width: "+getRandom(5,10)+"px;"+
             "border-radius: 5px;"+
             "transform: rotate3d(1, 1, 1, "+getRandom(15,45)+"deg);"+
-            "--animate-duration: 10s;"+
+            "--animate-duration: 13s;"+
             "--animate-delay: "+getRandom(0,1)+"s;"
             $("#puntitos").append("<div style='"+style+"' class='"+animationClass+"'></div>");
         }
