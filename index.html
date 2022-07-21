@@ -26,62 +26,47 @@
     <audio id="audioBg" controls hidden>
         <source src="assets/music.mp3" type="audio/mpeg" loop="infinite">
     </audio>
-    <div id="lines"></div>
     <div class="general">
         <div class="main">
             <div class="main-info">
-                <div class="main-title">Baby Shower</div>
+                <div class="main-title">
+                    <span>Baby</span> 
+                    <span>Shower</span>
+                  </div>
                 <div class="intro">
                     <div id="papasAnimation" class="click animate__animated animate__pulse animate__infinite"
                         data-bs-toggle="modal" data-bs-target="#losPapas">
                         SERGIO y DIANA
-                        <i class="ib-click to-click"></i>
                     </div>
                     esperan a su bebé con mucha emoción y lo quieren compartir contigo
                 </div>
-                <div class="emotion">
-                    ¡ACOMPAÑALOS!
-                </div>
                 <div id="babyAnimation" class="icon-baby-div click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#generoModal">
-                    <i class="ib-baby click" data-bs-toggle="tooltip" title="¿Niño o niña?"></i><i class="ib-click to-click" style="top: -30px;"></i>
+                    <i class="ib-baby click" data-bs-toggle="tooltip" title="¿Niño o niña?"></i>
                 </div>
                 <div class="general-info">
-                    <div class="data">
-                        <div class="div-icon">
-                            <i class="ib-calendar"></i>
+                    <div></div>
+                    <span class="date">17<br/>SEP</span>
+                    <div class="hour-address">
+                        <div class="data">
+                            <span class="info">HORA: 3:00PM</span>
                         </div>
-                        <span class="info">SABADO ## DE SEPTIEMBRE</span>
-                    </div>
-                    <div class="data">
-                        <div class="div-icon">
-                            <i class="ib-clock"></i>
-                        </div>
-                        <span class="info">DE 12H A 20H</span>
-                    </div>
-                    <!-- <div id="addressAnimation" class="data click animate__animated animate__pulse animate__infinite" onclick="window.open('https://goo.gl/maps/gg3iBJgo7fD5ohxU8', '_blank');"> -->
-                    <div id="addressAnimation" class="data click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#addressModal">    
-                    <div class="div-icon">
+                        <div id="addressAnimation" class="data click animate__animated animate__pulse animate__infinite" data-bs-toggle="modal" data-bs-target="#addressModal">    
                             <i class="ib-location"></i>
+                            <div class="info click">
+                                En casa de los bbcitos<br> más latositos
+                            </div>
                         </div>
-                        <div class="info click">
-                            En casa de los bbcitos<br> más latositos
-                            <i class="ib-click to-click" style="right: 9px; top: -8px;"></i>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="gift-foot">
-                        <!-- <img src="assets/gift.png" alt=""> -->
                     </div>
                 </div>
             </div>
             <div class="footer">
                 <div></div>
-                <img class="osito-img" src="assets/osita.png" alt="">
+                <img class="osito-img" src="assets/osita.svg" alt="">
             </div>
         </div>
-        <div id="stars" class="stars"></div>
     </div>
+    <img class="flores-img" src="assets/flores.svg" alt="">
+    
     <div id="modals-div"></div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
