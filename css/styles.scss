@@ -186,13 +186,11 @@ i {
 }
 
 .footer{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 110%;
-  align-content: end;
   position: relative;
-  bottom: 2rem;
-
+  bottom: -4.5rem;
+  display: flex;
+  justify-content: end;
+  left: 2.5rem;
 }
 
 .flores-img{
@@ -204,11 +202,9 @@ i {
 }
 
 .osito-img{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 30%;
   max-width: none;
+  width: 40%;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1500px) {
