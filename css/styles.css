@@ -19,7 +19,7 @@ body {
   font-weight: 900;
   line-height: 1.5;
   /* background-color: #fffdec; */
-  background-image: linear-gradient(to right, #fbe4d6 70%, #d0ab90 70%, #d0ab90 100%);
+  background-image: linear-gradient(to right, #fae4db 70%, rgba(208, 171, 144, 0.9176470588) 70%, rgba(208, 171, 144, 0.9176470588) 100%);
   color: #98603b;
   height: 100%;
 }
@@ -131,7 +131,7 @@ i {
 .div-icon {
   display: grid;
   border-radius: 50%;
-  background-color: #d0ab90;
+  background-color: rgba(208, 171, 144, 0.9176470588);
   padding: 1rem;
   margin: 1rem;
   height: -webkit-fit-content;
@@ -152,7 +152,7 @@ i {
 
 .v-line {
   position: absolute;
-  border-left: 1px solid #F7DAC7;
+  border-left: 1px solid rgba(238, 216, 201, 0.8823529412);
   height: 100%;
   z-index: -1055;
 }
