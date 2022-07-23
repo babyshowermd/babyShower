@@ -9,12 +9,20 @@ $(document).ready(function() {
         $("#"+this.id).removeClass("animate__infinite");
     });
 
-    for (let i = 0; i < 36; i++) {
-        topW = getRandom(0,5) + "rem"
-        left = getRandom(0,1.5) + "rem"
-        style = "top:"+topW+"; left:"+left+"; --animate-duration:" + getRandom(10,15) + "s"
+    for (let i = 0; i < 400; i++) {
+        topW = getRandom(0,1) + "rem"
+        left = getRandom(.25,2.5) + "rem"
+        style = "position: relative;"+
+            "z-index: -1;"+
+            "background: #a87e61;"+
+            "height: "+getRandom(2,3)+"px;"+
+            "width: "+getRandom(2,3)+"px;"+
+            "border-radius: 5px;"+
+            "transform: rotate3d(1, 1, 1, "+getRandom(15,45)+"deg);"+
+            "--animate-delay: "+getRandom(0,1)+"s;"
+        style += "top:"+topW+"; left:"+left+"; --animate-duration:" + getRandom(10,15) + "s"
         delay = Math.round(getRandom(0,1))
-        $("#stars").append('<div class="ib-star-full animate__backInDown animate__animated animate__delay-'+delay+'s animate__infinite" style="'+style+'"></div>');
+        $("#stars").append('<div class="animate__backInDown animate__animated animate__delay-'+delay+'s animate__infinite" style="'+style+'"></div>');
     }
 
     function getRandom(min, max) {
