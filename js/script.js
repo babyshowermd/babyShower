@@ -1,9 +1,5 @@
-var audio = document.getElementById("audioBg");
-audio.play();
-audio.volume = 0.25
+
 $(document).ready(function() {
-    //$('#audioBg').prop("volume", 0.1);
-    //$('#audioBg')[0].play()
     $('#interaccionId').modal('show');
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
     resizeObserver.observe(document.body);
@@ -45,6 +41,16 @@ $(document).ready(function() {
         $(".osito-img").css("width",  reSize + "rem");
         $(".gift-foot").css("height", mainH - $(".main-info").height() + "px")
     }
+
+    function startAudio(){
+        $('#audioBg').prop("volume", 0.1);
+        $('#audioBg')[0].play()
+    }
+    function pauseAudio(){
+        $('#audioBg')[0].pause()
+    }
+    
+    startAudio();
 
     $('#addressAnimation').click( ()=> {
         $("#addressFrame").attr("width", $("body").width() * 0.975);
