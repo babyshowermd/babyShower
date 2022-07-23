@@ -60,6 +60,8 @@ $(document).ready(function() {
     });
     setTimeout(() => {
         $("#musicControl").click(); 
+        $("#musicControl").click(); 
+        $("#musicControl").click(); 
     }, 2000);
 
     $('#addressAnimation').click( ()=> {
