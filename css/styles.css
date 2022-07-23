@@ -181,7 +181,7 @@ i {
 
 .footer {
   position: relative;
-  bottom: -4.5rem;
+  bottom: -2.5rem;
   display: flex;
   justify-content: end;
   left: 2.5rem;
@@ -189,7 +189,7 @@ i {
 
 .flores-img {
   position: fixed;
-  bottom: 0;
+  bottom: -5rem;
   left: -1rem;
   width: 30%;
   max-width: none;
