@@ -10,7 +10,6 @@ function pauseAudio(){
 }
 
 $(document).ready(function() {
-    $('#interaccionId').modal('show');
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
     resizeObserver.observe(document.body);
     $('#modals-div').load("modals.html");
@@ -59,8 +58,9 @@ $(document).ready(function() {
         musicActive  = !musicActive;
         
     });
-
-    //$("#musicControl").click();
+    setTimeout(() => {
+        $("#musicControl").click(); 
+    }, 2000);
 
     $('#addressAnimation').click( ()=> {
         $("#addressFrame").attr("width", $("body").width() * 0.975);
