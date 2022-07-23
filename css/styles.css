@@ -70,13 +70,13 @@ i {
 
 .main {
   display: grid;
-  grid-template-rows: auto 30rem;
+  grid-template-rows: 53rem 27rem;
 }
 
 .stars {
   display: grid;
-  grid-template-columns: repeat(2, 1fr 1fr);
-  grid-template-rows: repeat(50, 1fr);
+  grid-template-columns: repeat(1, 1fr 1fr 1fr);
+  grid-template-rows: repeat(10, 1fr);
 }
 
 .ib-star-full {
@@ -194,7 +194,6 @@ i {
 .gift-foot {
   position: absolute;
   display: grid;
-  width: 70vw;
   align-content: end;
   justify-content: start;
 }
@@ -204,7 +203,7 @@ i {
     justify-items: center;
   }
   .main {
-    grid-template-rows: auto 38rem;
+    grid-template-rows: 57rem 38rem;
   }
 }
 @media only screen and (max-width: 1000px) {
