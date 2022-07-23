@@ -1,4 +1,12 @@
 
+function startAudio(){
+    $('#audioBg').prop("volume", 0.1);
+    $('#audioBg')[0].play()
+}
+function pauseAudio(){
+    $('#audioBg')[0].pause()
+}
+
 $(document).ready(function() {
     $('#interaccionId').modal('show');
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
@@ -42,14 +50,6 @@ $(document).ready(function() {
         $(".gift-foot").css("height", mainH - $(".main-info").height() + "px")
     }
 
-    function startAudio(){
-        $('#audioBg').prop("volume", 0.1);
-        $('#audioBg')[0].play()
-    }
-    function pauseAudio(){
-        $('#audioBg')[0].pause()
-    }
-    
     startAudio();
 
     $('#addressAnimation').click( ()=> {
