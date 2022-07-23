@@ -12,9 +12,9 @@ $(document).ready(function() {
     for (let i = 0; i < 36; i++) {
         topW = getRandom(0,5) + "rem"
         left = getRandom(0,1.5) + "rem"
-        style = "top:"+topW+"; left:"+left+"; --animate-duration:" + getRandom(5,6) + "s"
+        style = "top:"+topW+"; left:"+left+"; --animate-duration:" + getRandom(10,15) + "s"
         delay = Math.round(getRandom(0,4))
-        $("#stars").append('<i class="ib-star-full animate__heartBeat animate__animated animate__delay-'+delay+'s animate__infinite" style="'+style+'"></i>');
+        $("#stars").append('<i class="ib-star-full animate__backInDown animate__animated animate__delay-'+delay+'s animate__infinite" style="'+style+'"></i>');
     }
 
     function getRandom(min, max) {
