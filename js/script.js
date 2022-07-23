@@ -1,5 +1,11 @@
 
 $(document).ready(function() {
+    document.getElementById('audioBg').addEventListener("mouseup", tapOrClick, false);
+    document.getElementById('audioBg').addEventListener("touchend", tapOrClick, false);
+
+    function tapOrClick(e) {
+        $('#audioBg')[0].play();
+    }
     $('#audioBg').prop("volume", 0.1);
     $('#audioBg')[0].play()
     $('#interaccionId').modal('show');
