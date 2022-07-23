@@ -1,13 +1,26 @@
 
-$(document).ready(function() {
-    document.getElementById('audioBg').addEventListener("mouseup", tapOrClick, false);
-    document.getElementById('audioBg').addEventListener("touchend", tapOrClick, false);
+const aCtx = new (window.AudioContext || window.webkitAudioContext)();
 
-    function tapOrClick(e) {
-        $('#audioBg')[0].play();
-    }
-    $('#audioBg').prop("volume", 0.1);
-    $('#audioBg')[0].play()
+const gainNode = aCtx.createGain();
+gainNode.gain.value = 0.5; // setting it to 10%
+gainNode.connect(aCtx.destination);
+
+let source = aCtx.createBufferSource();
+let buf;
+fetch('../assets/music.mp3') // can be XHR as well
+  .then(resp => resp.arrayBuffer())
+  .then(buf => aCtx.decodeAudioData(buf)) // can be callback as well
+  .then(decoded => {
+    source.buffer = buf = decoded;
+    source.loop = true;
+    source.connect(gainNode);
+    source.start(0); 
+   
+  });
+
+$(document).ready(function() {
+    /* $('#audioBg').prop("volume", 0.1);
+    $('#audioBg')[0].play() */
     $('#interaccionId').modal('show');
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
     resizeObserver.observe(document.body);
