@@ -205,11 +205,21 @@ i {
 
 .gift-foot{
   position: absolute;
-  display: grid;
-  //width: 70vw;
-  align-content: end;
-  justify-content: start;
+  bottom: 0.5rem;
+  left: 0.5rem;
 }
+
+.div-icon-music{
+  display: grid;
+  border-radius: 25%;
+  background-color: $backgorund-second;
+  padding: .75rem;
+  margin: .75rem;
+}
+.div-icon-music i{
+  font-size: 1.25rem;
+}
+
 
 @media screen and (min-width: 850px){
   .stars{

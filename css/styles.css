@@ -193,9 +193,20 @@ i {
 
 .gift-foot {
   position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.div-icon-music {
   display: grid;
-  align-content: end;
-  justify-content: start;
+  border-radius: 25%;
+  background-color: rgba(208, 171, 144, 0.9176470588);
+  padding: 0.75rem;
+  margin: 0.75rem;
+}
+
+.div-icon-music i {
+  font-size: 1.25rem;
 }
 
 @media screen and (min-width: 850px) {

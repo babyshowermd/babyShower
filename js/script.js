@@ -1,9 +1,11 @@
 
 function startAudio(){
+    $("#iconMusic").attr('class', 'ib-pause'); 
     $('#audioBg').prop("volume", 0.1);
     $('#audioBg')[0].play()
 }
 function pauseAudio(){
+    $("#iconMusic").attr('class', 'ib-play'); 
     $('#audioBg')[0].pause()
 }
 
@@ -45,12 +47,20 @@ $(document).ready(function() {
             style = "left:"+left+"; height:"+ height
             $("#lines").append('<div class="v-line" style="'+style+'"></div>');
         }
-        reSize =  0.018*($(".footer").width()-360) + 23
+        reSize =  0.008*($(".footer").width()-360) + 23
         $(".osito-img").css("width",  reSize + "rem");
-        $(".gift-foot").css("height", mainH - $(".main-info").height() + "px")
+        //$(".gift-foot").css("height", mainH - $(".main-info").height() + "px")
     }
 
-    startAudio();
+   
+    var musicActive = false;
+    $("#musicControl").click(function (e) {
+        musicActive ?  pauseAudio() : startAudio();
+        musicActive  = !musicActive;
+        
+    });
+
+    $("#musicControl").click();
 
     $('#addressAnimation').click( ()=> {
         $("#addressFrame").attr("width", $("body").width() * 0.975);
