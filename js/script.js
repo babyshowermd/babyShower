@@ -60,7 +60,7 @@ $(document).ready(function() {
         
     });
 
-    $("#musicControl").click();
+    //$("#musicControl").click();
 
     $('#addressAnimation').click( ()=> {
         $("#addressFrame").attr("width", $("body").width() * 0.975);
