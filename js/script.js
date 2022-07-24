@@ -23,7 +23,7 @@ $(window).focusin(function (e) {
 $(document).ready(function() {
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
     resizeObserver.observe(document.body);
-    $('#modals-div').load("modals.html");
+    //$('#modals-div').load("modals.html");
     $('[id$=Animation]').one('click', function(event) {
         $("#"+this.id).removeClass("animate__infinite");
     });
