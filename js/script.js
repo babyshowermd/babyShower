@@ -1,6 +1,5 @@
 
 function startAudio(){
-    alert(":)")
     $("#iconMusic").attr('class', 'ib-pause'); 
     $('#audioBg').prop("volume", 0.1);
     $('#audioBg')[0].play()
