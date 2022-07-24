@@ -1,12 +1,13 @@
 
+var audioBg = document.getElementById("audioBg");
 function startAudio(){
     $("#iconMusic").attr('class', 'ib-pause'); 
-    $('#audioBg').prop("volume", 0.1);
-    $('#audioBg')[0].play()
+    audioBg.volume = 0.05
+    audioBg.play()
 }
 function pauseAudio(){
     $("#iconMusic").attr('class', 'ib-play'); 
-    $('#audioBg')[0].pause()
+    audioBg.pause()
 }
 
 $(window).focusout(function (e) { 
