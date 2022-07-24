@@ -2,15 +2,18 @@ $(document).ready(function() {
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
     resizeObserver.observe(document.body);    
     var audioBg = document.getElementById("audioBg");
+    var musicActive = false;
 
     function startAudio(){
         $("#iconMusic").attr('class', 'ib-pause'); 
         audioBg.volume = 0.05
         audioBg.play()
+        musicActive = true
     }
     function pauseAudio(){
         $("#iconMusic").attr('class', 'ib-play'); 
         audioBg.pause()
+        musicActive = false
     }
     /* $(window).focusout(function (e) { 
         console.log("out");
@@ -48,12 +51,8 @@ $(document).ready(function() {
         //$(".gift-foot").css("height", mainH - $(".main-info").height() + "px")
     }
 
-   
-    var musicActive = false;
     $("#musicControl").click(function (e) {
-        console.log(musicActive);
         musicActive ?  pauseAudio() : startAudio();
-        musicActive  = !musicActive
     });
 
     $('#addressAnimation').click( ()=> {
@@ -61,6 +60,6 @@ $(document).ready(function() {
         $("#addressFrame").attr("height", $("body").height() * 0.75);
     })
 
-    $("#musicControl").click()
+    startAudio()
     $('#modals-div').load("modals.html");
 });
