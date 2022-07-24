@@ -64,4 +64,5 @@ $(document).ready(async () => {
     $(document).one("click", function () {
         startAudio();
     });
+    $(document).click()
 });
