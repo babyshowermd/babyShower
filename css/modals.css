@@ -1,5 +1,5 @@
 .modal{
-    --bs-modal-bg: #e8e0d4;
+    --bs-modal-bg: white;
 }
 
 .modal-content{
@@ -57,7 +57,7 @@
 
 .carousel-caption h5{
     font-size: 1.5rem;
-    color: #e8e0d4;
+    color: white;
     background: #070707;
     border-radius: 1rem;
     padding: 0.75rem;
