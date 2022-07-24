@@ -59,6 +59,10 @@ $(document).ready(function() {
         
     });
 
+    setTimeout(() => {
+        $("#musicControl").click()
+    }, 2000);
+    
     $('#addressAnimation').click( ()=> {
         $("#addressFrame").attr("width", $("body").width() * 0.975);
         $("#addressFrame").attr("height", $("body").height() * 0.75);
