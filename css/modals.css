@@ -63,4 +63,27 @@
     padding: 0.75rem;
     text-transform: uppercase;
 }
+
+.carousel-indicators{
+    background: black;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: .25rem;
+    border-radius: 1rem;
+}
+
+/* .carousel-indicators [data-bs-target]{
+    background-color: aqua;
+} */
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    font-size: 1.5rem;
+    color: white;
+    background: #070707;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+}
   

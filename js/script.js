@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(document).ready(async () => {
+    $('#modals-div').load("modals.html");
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
     resizeObserver.observe(document.body);    
     var audioBg = document.getElementById("audioBg");
@@ -15,11 +16,6 @@ $(document).ready(function() {
         audioBg.pause()
         musicActive = false
     }
-    /* $(window).focusout(function (e) { 
-        console.log("out");
-        pauseAudio();
-        musicActive = false
-    }); */
 
     $('[id$=Animation]').one('click', function(event) {
         $("#"+this.id).removeClass("animate__infinite");
@@ -47,8 +43,8 @@ $(document).ready(function() {
             $("#lines").append('<div class="v-line" style="'+style+'"></div>');
         }
         reSize =  0.008*($(".footer").width()-360) + 23
-        $(".osito-img").css("width",  reSize + "rem");
-        //$(".gift-foot").css("height", mainH - $(".main-info").height() + "px")
+        $(".osito-img").css("width",  reSize + "rem");  
+        $(".rad-img").height($("#caruselDiv").width()+100)  
     }
 
     $("#musicControl").click(function (e) {
@@ -60,6 +56,12 @@ $(document).ready(function() {
         $("#addressFrame").attr("height", $("body").height() * 0.75);
     })
 
-    startAudio()
-    $('#modals-div').load("modals.html");
+    $("#babyAnimation").click((e)=>{ 
+        setTimeout(() => {
+            $(".rad-img").height($("#caruselDiv").width()+100)  
+        }, 200); 
+    });
+    $(document).one("click", function () {
+        startAudio();
+    });
 });
