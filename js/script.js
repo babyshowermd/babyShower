@@ -1,29 +1,23 @@
-
-var audioBg = document.getElementById("audioBg");
-function startAudio(){
-    $("#iconMusic").attr('class', 'ib-pause'); 
-    audioBg.volume = 0.05
-    audioBg.play()
-}
-function pauseAudio(){
-    $("#iconMusic").attr('class', 'ib-play'); 
-    audioBg.pause()
-}
-
-$(window).focusout(function (e) { 
-    e.preventDefault();
-    pauseAudio();
-});
-$(window).focusin(function (e) { 
-    e.preventDefault();
-    startAudio();
-});
-
-
 $(document).ready(function() {
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
-    resizeObserver.observe(document.body);
-    //$('#modals-div').load("modals.html");
+    resizeObserver.observe(document.body);    
+    var audioBg = document.getElementById("audioBg");
+
+    function startAudio(){
+        $("#iconMusic").attr('class', 'ib-pause'); 
+        audioBg.volume = 0.05
+        audioBg.play()
+    }
+    function pauseAudio(){
+        $("#iconMusic").attr('class', 'ib-play'); 
+        audioBg.pause()
+    }
+    /* $(window).focusout(function (e) { 
+        console.log("out");
+        pauseAudio();
+        musicActive = false
+    }); */
+
     $('[id$=Animation]').one('click', function(event) {
         $("#"+this.id).removeClass("animate__infinite");
     });
@@ -57,9 +51,9 @@ $(document).ready(function() {
    
     var musicActive = false;
     $("#musicControl").click(function (e) {
+        console.log(musicActive);
         musicActive ?  pauseAudio() : startAudio();
-        musicActive  = !musicActive;
-        
+        musicActive  = !musicActive
     });
 
     $('#addressAnimation').click( ()=> {
@@ -68,4 +62,5 @@ $(document).ready(function() {
     })
 
     $("#musicControl").click()
+    $('#modals-div').load("modals.html");
 });
