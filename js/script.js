@@ -1,4 +1,4 @@
-$(document).ready(async () => {
+$(document).ready(() => {
     $('#modals-div').load("modals.html");
     const resizeObserver = new ResizeObserver(size=>updateScreenSize());  
     resizeObserver.observe(document.body);    
@@ -64,5 +64,4 @@ $(document).ready(async () => {
     $(document).one("click", function () {
         startAudio();
     });
-    $(document).click()
 });
