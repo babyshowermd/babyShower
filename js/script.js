@@ -61,7 +61,21 @@ $(document).ready(() => {
             $(".rad-img").height($("#caruselDiv").width()+100)  
         }, 200); 
     });
-    $(document).one("click", function () {
+
+    $("#openIvt").click((e)=>{
+        let animateLeft="animate__animated animate__slower animate__fadeOutLeft"
+        let animateLeftRight="animate__animated animate__slower animate__fadeOutRight"
+        $(".card-l").addClass(animateLeft); 
+        $("#cl-l").addClass(animateLeft); 
+        $(".open-aux").addClass(animateLeft); 
+
+        $(".card-r").addClass(animateLeftRight); 
+        $("#cl-r").addClass(animateLeftRight); 
         startAudio();
+        
     });
+    
+    /* $(document).one("click", function () {
+        startAudio();
+    }); */
 });

@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /** Box Model All HTML elements**/
 $backgorund-main: #fae4db;
-$backgorund-second: #d0ab90ea;
+$background-second: #d0ab90ea;
+$background-second-nT: #FEEBD5;
 $main-text: #754b32;
 $main-second: #98735D;
 $color-hover: #ffb286;
@@ -30,7 +31,7 @@ body {
   font-weight: 900;
   line-height: 1.5;
   /* background-color: #fffdec; */
-  background-image: linear-gradient(to right, $backgorund-main 70%,$backgorund-second 70%,$backgorund-second 100%);
+  background-image: linear-gradient(to right, $backgorund-main 70%,$background-second 70%,$background-second 100%);
   color: $general-color;
   height: 100%;
 }
@@ -71,6 +72,75 @@ i {
   margin-right: -1rem;
   font-size: 1.5rem;
 }
+
+.card-init{
+  position: fixed;
+  //background-color: #79727265;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+}
+
+.card-sides{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.card-l{
+  width: 49.75vw;
+  height: 100vh;
+  background-color: $background-second-nT;
+}
+
+.card-r{
+  width: 49.75vw;
+  height: 100vh;
+  background-color: $background-second-nT;
+  justify-self: end;
+}
+
+.card-belt{
+  width: 100%;
+  position: absolute;
+  top: 40vh;
+}
+
+.card-line{
+  width: 50vw;
+  height: 5vh;
+  background-color: #754b32;
+}
+
+.card-line:nth-child(2){
+  position: relative;
+  top: -5vh;
+  left: 50%;
+}
+
+
+.open-aux{
+  position: absolute;
+  top: -1.5rem;
+  left: 50vw;
+  width: 50%;
+  margin-left: -3.5rem;
+}
+
+.card-open{
+  cursor: pointer;
+  width: 7rem;
+  height: 7rem;
+  background-color: #ded59f;
+  border-radius: 7rem;
+  border: 5px solid #b9b28d;
+  color: #b9b28d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .general{
   display: grid;
@@ -141,7 +211,7 @@ i {
 .div-icon {
   display: grid;
   border-radius: 50%;
-  background-color: $backgorund-second;
+  background-color: $background-second;
   padding: 1rem;
   margin: 1rem;
   height: fit-content;
@@ -212,7 +282,7 @@ i {
 .div-icon-music{
   display: grid;
   border-radius: 25%;
-  background-color: $backgorund-second;
+  background-color: $background-second;
   padding: .75rem;
   margin: .75rem;
 }
