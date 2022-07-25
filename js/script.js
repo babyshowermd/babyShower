@@ -72,9 +72,10 @@ $(document).ready(() => {
 
         $("#cs2").addClass(animateLeftRight); 
         $("#cl-r").addClass(animateLeftRight); 
+
         setTimeout(() => {
             $(".card-init").css("z-index", "-1050");
-        }, 3000);
+        }, 2500);
         
         startAudio();
         
