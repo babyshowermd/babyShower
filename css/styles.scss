@@ -2,7 +2,6 @@
 /** Box Model All HTML elements**/
 $backgorund-main: #fae4db;
 $background-second: #d0ab90ea;
-$background-second-nT: #FEEBD5;
 $main-text: #754b32;
 $main-second: #98735D;
 $color-hover: #ffb286;
@@ -87,16 +86,14 @@ i {
   height: 100%;
 }
 
-.card-l{
+.card-side{
   width: 49.75vw;
   height: 100vh;
-  background-color: $background-second-nT;
+  background-color: #FEEBD5;
+  //border: 3px solid #967765b7;
 }
 
-.card-r{
-  width: 49.75vw;
-  height: 100vh;
-  background-color: $background-second-nT;
+.card-side:nth-child(2){
   justify-self: end;
 }
 
@@ -109,7 +106,9 @@ i {
 .card-line{
   width: 50vw;
   height: 5vh;
-  background-color: #754b32;
+  background-color: #91644b;
+  border-top: 5px solid #754b32;
+  border-bottom: 5px solid #754b32;
 }
 
 .card-line:nth-child(2){

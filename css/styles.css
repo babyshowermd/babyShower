@@ -75,16 +75,13 @@ i {
   height: 100%;
 }
 
-.card-l {
+.card-side {
   width: 49.75vw;
   height: 100vh;
   background-color: #FEEBD5;
 }
 
-.card-r {
-  width: 49.75vw;
-  height: 100vh;
-  background-color: #FEEBD5;
+.card-side:nth-child(2) {
   justify-self: end;
 }
 
@@ -97,7 +94,9 @@ i {
 .card-line {
   width: 50vw;
   height: 5vh;
-  background-color: #754b32;
+  background-color: #91644b;
+  border-top: 5px solid #754b32;
+  border-bottom: 5px solid #754b32;
 }
 
 .card-line:nth-child(2) {

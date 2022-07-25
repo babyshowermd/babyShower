@@ -63,13 +63,14 @@ $(document).ready(() => {
     });
 
     $("#openIvt").click((e)=>{
-        let animateLeft="animate__animated animate__slower animate__fadeOutLeft"
-        let animateLeftRight="animate__animated animate__slower animate__fadeOutRight"
-        $(".card-l").addClass(animateLeft); 
+        let animateLeft="animate__animated animate__slower animate__slideOutLeft"
+        let animateLeftRight="animate__animated animate__slower animate__slideOutRight"
+        
+        $("#cs1").addClass(animateLeft); 
         $("#cl-l").addClass(animateLeft); 
         $(".open-aux").addClass(animateLeft); 
 
-        $(".card-r").addClass(animateLeftRight); 
+        $("#cs2").addClass(animateLeftRight); 
         $("#cl-r").addClass(animateLeftRight); 
         startAudio();
         
