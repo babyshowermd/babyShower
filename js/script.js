@@ -7,7 +7,7 @@ $(document).ready(() => {
 
     function startAudio(){
         $("#iconMusic").attr('class', 'ib-pause'); 
-        audioBg.volume = 0.05
+        audioBg.volume = 0.2
         audioBg.play()
         musicActive = true
     }
@@ -72,6 +72,10 @@ $(document).ready(() => {
 
         $("#cs2").addClass(animateLeftRight); 
         $("#cl-r").addClass(animateLeftRight); 
+        setTimeout(() => {
+            $(".card-init").css("z-index", "-1050");
+        }, 3000);
+        
         startAudio();
         
     });
