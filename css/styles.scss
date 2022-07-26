@@ -7,9 +7,15 @@ $main-second: #98735D;
 $color-hover: #ffb286;
 $stars-color: #c59879;
 $general-color: #98603b;
-$header-color: #d0aa8e;
+$header-color: #C49879;
 $lines-color: #eed8c9e1;
 $emotion-color: #c29e83;
+
+@font-face {
+  font-family: 'Ganache';
+  src:  url('../icons/fonts/Ganache\ W01\ Regular.ttf');
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -174,7 +180,7 @@ i {
 }
 
 .main-title {
-  font-family: 'Courgette', cursive;
+  font-family: 'Ganache';
   text-shadow: -2px -2px 1px #835314;
   margin: 1rem auto;
   text-align: center;
@@ -317,7 +323,7 @@ i {
     max-width: 8rem;
   }
   .main-title {
-    font-size: 3.75rem;
+    font-size: 4.5rem;
   }
   .intro, .emotion{
     font-size: 1.75rem;

@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 /** Box Model All HTML elements**/
+@font-face {
+  font-family: "Ganache";
+  src: url("../icons/fonts/Ganache W01 Regular.ttf");
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -161,12 +165,12 @@ i {
 }
 
 .main-title {
-  font-family: "Courgette", cursive;
+  font-family: "Ganache";
   text-shadow: -2px -2px 1px #835314;
   margin: 1rem auto;
   text-align: center;
   font-size: 8rem;
-  color: #d0aa8e;
+  color: #C49879;
   font-weight: 700;
 }
 
@@ -301,7 +305,7 @@ i {
     max-width: 8rem;
   }
   .main-title {
-    font-size: 3.75rem;
+    font-size: 4.5rem;
   }
   .intro, .emotion {
     font-size: 1.75rem;
