@@ -1,9 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 /** Box Model All HTML elements**/
-@font-face {
-  font-family: "Ganache";
-  src: url("../icons/fonts/Ganache W01 Regular.ttf");
-}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -19,7 +15,7 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "MrEavesReg";
   font-weight: 900;
   line-height: 1.5;
   /* background-color: #fffdec; */
@@ -80,12 +76,13 @@ i {
 }
 
 .card-side {
-  width: 49.75vw;
+  width: 50vw;
   height: 100vh;
   background-color: #FEEBD5;
 }
 
 .card-side:nth-child(2) {
+  border-left: 2px solid #91644b;
   justify-self: end;
 }
 
@@ -166,7 +163,7 @@ i {
 
 .main-title {
   font-family: "Ganache";
-  text-shadow: -2px -2px 1px #835314;
+  text-shadow: -2px -2px 1px rgba(235, 207, 187, 0.6509803922);
   margin: 1rem auto;
   text-align: center;
   font-size: 8rem;
@@ -176,7 +173,7 @@ i {
 
 .intro {
   margin: 0 1.5rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "MrEavesReg";
   color: #754b32;
   font-size: 3rem;
   text-align: center;
@@ -187,7 +184,7 @@ i {
   justify-self: center;
   align-self: center;
   color: #c29e83;
-  font-size: 3rem;
+  font-size: 7rem;
 }
 
 .general-info {
@@ -242,7 +239,7 @@ i {
 
 .ib-baby {
   justify-content: center;
-  font-size: 4.5rem;
+  font-size: 5rem;
 }
 
 .osito-img {
@@ -293,8 +290,11 @@ i {
   .main-title {
     font-size: 6rem;
   }
-  .intro, .emotion {
+  .intro {
     font-size: 2.5rem;
+  }
+  .emotion {
+    font-size: 3.5rem;
   }
   .info {
     font-size: 2.25rem;
@@ -307,8 +307,11 @@ i {
   .main-title {
     font-size: 4.5rem;
   }
-  .intro, .emotion {
+  .intro {
     font-size: 1.75rem;
+  }
+  .emotion {
+    font-size: 2rem;
   }
   .info {
     font-size: 1.5rem;

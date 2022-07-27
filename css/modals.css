@@ -1,5 +1,5 @@
 .modal{
-    --bs-modal-bg: white;
+    --bs-modal-bg: #FAE4DB;
 }
 
 .modal-content{
@@ -13,12 +13,12 @@
 }
 
 .modal-title{
-    font-family: 'Monofett', cursive !important;
+    font-family: 'MrEavesHeavy' !important;
     margin: auto auto;
     text-align: center;
     font-family: cursive;
     font-size: 5rem;
-    color: black !important;
+    color: #C49879 !important;
     width: 100%;
   }
 
@@ -42,7 +42,9 @@
 
 .papas{
     transform: rotate(var(--ang));
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
+    padding: 1rem;
+    box-shadow: 2px 2px 3px 2px #ac9687;
 }
 
 .rad-img{

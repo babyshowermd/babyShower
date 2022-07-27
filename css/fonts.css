@@ -1,0 +1,28 @@
+@font-face {
+font-family: 'Ganache';
+src:  url('../icons/fonts/Ganache\ W01\ Regular.ttf');
+}
+@font-face {
+font-family: 'MrEavesBook';
+src:  url('../icons//fonts/MrEavesXLModOT-Book.ttf');
+}
+@font-face {
+font-family: 'MrEavesReg';
+src:  url('../icons//fonts/MrEavesXLModOT-Reg.ttf');
+}
+@font-face {
+font-family: 'MrEavesThin';
+src:  url('../icons//fonts/MrEavesXLModOT-Thin.ttf');
+}
+@font-face {
+font-family: 'MrEavesHeavy';
+src:  url('../icons//fonts/MrEavesXLModOT-Heavy.ttf');
+}
+@font-face {
+font-family: 'MrEavesLight';
+src:  url('../icons//fonts/MrEavesXLModOT-Light.ttf');
+}
+@font-face {
+    font-family: 'MrEavesUltra';
+    src:  url('../icons//fonts/MrEavesXLModOT-Ultra.ttf');
+    }
