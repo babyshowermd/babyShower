@@ -65,7 +65,7 @@ $(document).ready(() => {
     $("#openIvt").click((e)=>{
         let animateLeft="animate__animated animate__slower animate__slideOutLeft"
         let animateLeftRight="animate__animated animate__slower animate__slideOutRight"
-        
+        $(".card-init").css("background", "transparent");
         $("#cs1").addClass(animateLeft); 
         $("#cl-l").addClass(animateLeft); 
         $(".open-aux").addClass(animateLeft); 
