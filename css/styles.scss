@@ -100,8 +100,8 @@ i {
 .card-side:nth-child(1){
   //background-color: #FEEBD9;
   border-right: 5px groove #cca5833d;
-  border-top-right-radius: 3rem;
-  border-bottom-right-radius: 3rem;
+  border-top-right-radius: 3.5rem;
+  border-bottom-right-radius: 3.5rem;
 }
 
 .card-side:nth-child(2){
@@ -118,7 +118,7 @@ i {
 
 .card-line{
   width: 50vw;
-  height: 5vh;
+  height: 4rem;
   background-color: #91644b;
   border-top: 5px solid #754b32;
   border-bottom: 5px solid #754b32;
@@ -126,7 +126,7 @@ i {
 
 .card-line:nth-child(2){
   position: relative;
-  top: -5vh;
+  top: -4rem;
   left: 50%;
 }
 
