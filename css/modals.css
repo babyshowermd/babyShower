@@ -20,6 +20,7 @@
     font-size: 5rem;
     color: #C49879 !important;
     width: 100%;
+    line-height: 1;
   }
 
 .modal-body{
@@ -46,6 +47,14 @@
     margin-bottom: 1rem;
     padding: 1.5rem;
     box-shadow: 2px 2px 3px 2px #ac9687;
+}
+
+.tios{
+    max-width: fit-content;
+    width: none;
+    box-shadow: 5px 5px 10px 3px #ac9687;
+    border-radius: 1rem;
+    margin: 2rem;
 }
 
 .rad-img{

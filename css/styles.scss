@@ -20,6 +20,10 @@ html {
   height: 100%;
 }
 
+h1{
+  font-weight: normal;
+}
+
 *,
 *:before,
 *:after {
@@ -75,12 +79,11 @@ i {
 
 .card-init{
   position: fixed;
-  //background-color: #79727265;
   z-index: 1050;
   width: 100%;
   height: 100%;
   background: #FEEBD5;
-  font-family: "MrEavesLight";
+  font-family: "MrEavesBook";
   letter-spacing: .25rem;
 }
 
@@ -149,7 +152,6 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
 }
 
 
@@ -342,6 +344,7 @@ i {
     font-size: 2rem;
   }
   .info{
-    font-size: 1.5rem;
+    font-size: 1.55rem;
+    text-transform: uppercase;
   }
 }
