@@ -21,6 +21,15 @@ $(document).ready(() => {
         $("#"+this.id).removeClass("animate__infinite");
     });
 
+    if($(location).attr('hash') !== "#surprise")
+        $("#ositoId").removeAttr("data-bs-toggle");
+    $(window).on( 'hashchange', ()=>{
+        if($(location).attr('hash') !== "#surprise")
+            $("#ositoId").removeAttr("data-bs-toggle");
+        else
+            $("#ositoId").attr("data-bs-toggle", "modal");
+    });
+
     for (let i = 0; i < 30; i++) {
         topW = getRandom(0,1) + "rem"
         left = getRandom(.25,2.5) + "rem"
@@ -76,9 +85,7 @@ $(document).ready(() => {
         setTimeout(() => {
             $(".card-init").css("z-index", "-1050");
         }, 2500);
-        
-        startAudio();
-        
+        startAudio(); 
     });
     
     /* $(document).one("click", function () {
